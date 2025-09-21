@@ -1,2 +1,5 @@
 Pillow==10.0.1
 py2app==0.28.7
+requests==2.32.3
+packaging==24.1
+charset-normalizer==3.3.2

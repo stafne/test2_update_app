@@ -10,6 +10,7 @@ DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
     'iconfile': None,  # You can add a .icns file here later
+    'packages': ['charset_normalizer'],
     'plist': {
         'CFBundleName': 'Beautiful Flower Display',
         'CFBundleDisplayName': 'Beautiful Flower Display',
@@ -18,6 +19,7 @@ OPTIONS = {
         'CFBundleVersion': '1.0.0',
         'CFBundleShortVersionString': '1.0.0',
         'NSHighResolutionCapable': True,
+        'LSArchitecturePriority': ['x86_64', 'arm64'],
     }
 }
 
@@ -26,5 +28,5 @@ setup(
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
-    install_requires=['Pillow'],
+    install_requires=['Pillow', 'requests', 'packaging', 'charset-normalizer'],
 )
