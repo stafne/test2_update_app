@@ -1,5 +1,5 @@
-Pillow==10.0.1
-py2app==0.28.7
-requests==2.32.3
-packaging==24.1
-charset-normalizer==3.3.2
+Pillow>=10.0.0
+py2app>=0.28.0
+requests>=2.32.0
+packaging>=24.0
+charset-normalizer>=3.3.0
