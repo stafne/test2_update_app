@@ -16,11 +16,13 @@ OPTIONS = {
         'CFBundleDisplayName': 'Beautiful Flower Display',
         'CFBundleGetInfoString': 'A beautiful animated flower display app',
         'CFBundleIdentifier': 'com.yourcompany.flowerapp',
-        'CFBundleVersion': '1.0.1',
-        'CFBundleShortVersionString': '1.0.1',
+        'CFBundleVersion': '1.0.2',
+        'CFBundleShortVersionString': '1.0.2',
         'NSHighResolutionCapable': True,
         'LSArchitecturePriority': ['x86_64', 'arm64'],
-    }
+    },
+    'codesign_identity': None,  # Disable code signing
+    'codesign_entitlements': None,
 }
 
 setup(
