@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageTk
 import threading
 import time
 from version import __version__, __app_name__
-from updater import check_for_updates_startup, check_for_updates_manual
+from app_updater import check_for_updates_startup, check_for_updates_manual
 
 class FlowerApp:
     def __init__(self, root):

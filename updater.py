@@ -32,7 +32,10 @@ class UpdateChecker:
                         self._show_no_update_message()
                 else:
                     if show_no_update_message:
-                        self._show_error_message("Failed to check for updates")
+                        error_msg = f"Failed to check for updates (HTTP {response.status_code})"
+                        if response.status_code == 404:
+                            error_msg += "\n\nThis usually means:\n• No releases exist yet\n• Repository is private\n• Repository doesn't exist"
+                        self._show_error_message(error_msg)
             except Exception as e:
                 if show_no_update_message:
                     self._show_error_message(f"Update check failed: {str(e)}")
