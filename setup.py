@@ -16,8 +16,8 @@ OPTIONS = {
         'CFBundleDisplayName': 'Beautiful Flower Display',
         'CFBundleGetInfoString': 'A beautiful animated flower display app',
         'CFBundleIdentifier': 'com.yourcompany.flowerapp',
-        'CFBundleVersion': '1.0.0',
-        'CFBundleShortVersionString': '1.0.0',
+        'CFBundleVersion': '1.0.1',
+        'CFBundleShortVersionString': '1.0.1',
         'NSHighResolutionCapable': True,
         'LSArchitecturePriority': ['x86_64', 'arm64'],
     }

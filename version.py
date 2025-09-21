@@ -2,7 +2,7 @@
 Version management for Beautiful Flower Display
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __app_name__ = "Beautiful Flower Display"
 __bundle_id__ = "com.yourcompany.flowerapp"
 
